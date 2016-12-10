@@ -47,4 +47,12 @@ If you want to use any commands, you can type it behand the run script, such as:
 docker run -it --rm \
    -v /path/to/hexo:/root/blog \
    croef/hexo generate
-```  
+```
+
+or
+
+```bash
+docker run -it --rm \
+   -v /path/to/hexo:/root/blog \
+   croef/hexo deploy
+```
