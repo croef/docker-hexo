@@ -25,7 +25,7 @@ Start Hexo:
 1. Init Hexo for the first time
 	
 	```bash
-	docker run -it --rm -p 4000:4000 \
+	docker run -it --rm \
    		-v /path/to/hexo:/root/blog \
    		croef/hexo init
 	```
@@ -44,7 +44,7 @@ Then you can open [http://localhost:4000/](http://localhost:4000/)  to watch you
 If you want to use any commands, you can type it behand the run script, such as:
 
 ```bash
-docker run -it --rm -p 4000:4000 \
+docker run -it --rm \
    -v /path/to/hexo:/root/blog \
    croef/hexo generate
 ```  
