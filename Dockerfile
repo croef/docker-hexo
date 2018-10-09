@@ -15,7 +15,7 @@ WORKDIR /root/blog/
 
 VOLUME ["/root/blog/"]
 
-COPY custom-update.sh /custom-update.sh
+COPY custom-update.sh /root/blog/custom-update.sh
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
