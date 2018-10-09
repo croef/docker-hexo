@@ -9,7 +9,6 @@ elif [ "$1" = 'bash' ]; then
 elif [ "$1" = 'update' ]; then
     cd /root/blog
     npm install hexo-generator-sitemap --save
-    npm install hexo-server --save
 else
     cd /root/blog
     echo "$*"
