@@ -9,7 +9,7 @@ RUN \
   mkdir blog && cd blog && \
   # install hexo
   npm install hexo-cli -g && \
-  npm install hexo-generator-sitemap -g
+  npm install hexo-generator-sitemap -g --save
 
 
 WORKDIR /root/blog/
