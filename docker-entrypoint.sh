@@ -6,9 +6,9 @@ if [ "$1" = 'init' ]; then
     npm install 
 elif [ "$1" = 'bash' ]; then
 	/bin/bash
-elif [ "$1" = 'pull' ]; then
-    cd /root/blog/
-    sh custom-update.sh
+elif [ "$1" = 'update' ]; then
+    cd /root/blog
+    npm install hexo-generator-sitemap --save
 else
     cd /root/blog
     hexo "$*"
