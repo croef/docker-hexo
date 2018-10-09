@@ -8,8 +8,8 @@ elif [ "$1" = 'bash' ]; then
 	/bin/bash
 elif [ "$1" = 'pull' ]; then
     cd /root/blog/
-    /bin/bash custom-update.sh
+    sh custom-update.sh
 else
     cd /root/blog
-	hexo "$*"
+    hexo "$*"
 fi
