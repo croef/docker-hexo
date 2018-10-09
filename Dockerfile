@@ -8,8 +8,7 @@ RUN \
   npm config set registry https://registry.npm.taobao.org/ && \
   mkdir blog && cd blog && \
   # install hexo
-  npm install hexo-cli -g && \
-  npm install hexo-generator-sitemap -g --save
+  npm install hexo-cli -g
 
 
 WORKDIR /root/blog/
